@@ -1,21 +1,28 @@
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ececec;
+  background-color: var(--background-color);;
+}
+
+@font-face {
+  font-family: "text-font";
+  src: url(../../assets/fonts/BaiJamjuree-Regular.ttf);
 }
 
 .text-container {
     display: flex;
-    justify-content: center;
-    margin-top: 7rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 1rem;
 }
 
-.text-container h1 {
+.text-container > h1 {
   font-size: 60px;
-  color: rgba(225, 225, 225, 0.01);
+  color: rgba(51, 45, 45, 0.01);
   background-image: url("../../assets/universe.jpg");
   -webkit-background-clip: text;
   animation: animate 60s ease-in-out infinite;
   font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes animate {
@@ -34,15 +41,64 @@
   }
 }
 
+.text-container > p {
+  text-align: justify;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .na-home {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+.na-home > h2 {
+  font-size: 18px;
+}
+
+.na-home > h2, a {
+  font-family: "text-font";
+  color: var(--primary-color)
 }
 
 .na-home > button {
   padding: 10px;
-  border: 3px solid #4e3da4;
+  border: 3px solid var(--secondary-color);
   border-radius: 10px;
+  font-size: 1rem;
+}
+
+.na-home > button:hover, a:hover {
+  background-color: var(--secondary-color);
+  transition: .5s;
+  color: var(--background-color);
+}
+
+footer > p {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: "text-font";
+}
+
+@media (min-width: 647px) {
+  .text-container > p {
+    margin: 0 4rem 1rem 4rem;
+    font-size: 18px;
+  }
+
+  .na-home > h2 {
+    font-family: "text-font";
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
 }

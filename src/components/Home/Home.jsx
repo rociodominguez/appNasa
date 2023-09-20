@@ -7,25 +7,22 @@ const Home = () => {
     <>
       <div className="text-container">
         <h1>WELCOME</h1>
+        <p>
+        The NASA API, or Application Programming Interface, is a set of rules and protocols that allows software applications to communicate and interact with NASA's vast database of space-related information and resources. It provides developers with access to a wide range of data, including images, videos, mission details, astronomical observations, and more, collected from various NASA missions and research endeavors. This API empowers developers to incorporate real-time and historical space-related information into their own applications, websites, or projects, enabling them to create educational tools, visualizations, and applications that utilize NASA's wealth of knowledge about our universe.
+        </p>
       </div>
-      <p>
-        The NASA API provides developers with access to a wealth of
-        space-related data, images, and scientific knowledge. It offers detailed
-        information on celestial bodies, space missions, and astronomical
-        events. Additionally, it boasts a stunning collection of images captured
-        by space missions and provides access to valuable scientific data,
-        making it an essential resource for space enthusiasts, scientists,
-        educators, and students alike.
-      </p>
       <div className="na-home">
         <h2>WHERE DO YOU WANT TO GO?</h2>
         <button>
-          <Link to="/nasa">Go to Nasa</Link>
+          <Link to="/nasa">NASA</Link>
         </button>
         <button>
-          <Link to="/mars">Go to Mars</Link>
+          <Link to="/mars">MARS</Link>
         </button>
       </div>
+      <footer>
+        <p>Created with ❤ by Rocío Domínguez</p>
+      </footer>
     </>
   );
 };

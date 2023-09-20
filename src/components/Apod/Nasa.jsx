@@ -33,13 +33,15 @@ const Nasa = () => {
   const dateInput = (event) => setDate(event.target.value.toString());
 
   return (
-    <div className="na-div">
-      <h1>Astronomic picture of the day</h1>
-      <h2>{nasaData && nasaData.title}</h2>
-      <input type="date" value={date} max={day} onChange={dateInput} />
-      {nasaData && <img src={nasaData.image} alt={nasaData.title} />}
-      <p>{nasaData && nasaData.explanation}</p>
-    </div>
+    <>
+      <div className="na-div">
+        <h1>Astronomic picture of the day</h1>
+        <h2>{nasaData && nasaData.title}</h2>
+        <input type="date" value={date} max={day} onChange={dateInput} />
+        {nasaData && <img src={nasaData.image} alt={nasaData.title} />}
+        <p>{nasaData && nasaData.explanation}</p>
+      </div>
+    </>
   );
 };
 

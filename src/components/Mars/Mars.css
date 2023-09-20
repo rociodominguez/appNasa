@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "text-font";
+    src: url(../../assets/fonts/BaiJamjuree-Regular.ttf);
+}
+
+.na-mars {
+    font-family: "text-font";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.na-mars > img {
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .na-mars > img {
+        width: 70%;
+    }
+}
